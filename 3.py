@@ -1,7 +1,9 @@
-n=600851475143
+import numpy as np
 
-for i in range(0,n+1):
-   mod=n%i
-   if (mod==0):
-       print i
-       break
+n=600851475143
+datos = np.loadtxt("./lista_primos.dat")
+
+for i in datos:
+    a=n%i
+    if(a==0):
+        print i
